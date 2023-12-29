@@ -1,0 +1,320 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d285eb63c2cdd74180de7cfceaa96ad, type: 3}
+  m_Name: Zombie2
+  m_EditorClassIdentifier: 
+  rootNode:
+    rid: 8280498510841249793
+  nodes:
+  - rid: 8280498510841249793
+  - rid: 8280498510841249794
+  - rid: 8280498510841249795
+  - rid: 8280498510841249796
+  - rid: 8280498510841249797
+  - rid: 8280498510841249798
+  - rid: 8280498518075637760
+  - rid: 8280498518075637761
+  - rid: 8280498518075637762
+  - rid: 8280498518075637763
+  - rid: 8280498518075637764
+  - rid: 8280498518075637765
+  treeState: 0
+  blackboard:
+    keys:
+    - rid: 8280498510841249806
+    - rid: 8280498510841249807
+    - rid: 8280498510841249808
+    - rid: 8280498510841249809
+    - rid: 8280498510841249810
+    - rid: 8280498510841249811
+    - rid: 8280498510841249812
+    - rid: 8280498511813017607
+  viewPosition: {x: 412.66666, y: 76, z: 0}
+  viewScale: {x: 0.375937, y: 0.375937, z: 1}
+  references:
+    version: 2
+    RefIds:
+    - rid: 8280498510841249793
+      type: {class: RootNode, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        state: 0
+        started: 0
+        guid: 33d91751-533f-4f1a-bffd-82b981c16e53
+        position: {x: 0, y: 0}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        child:
+          rid: 8280498510841249794
+    - rid: 8280498510841249794
+      type: {class: Repeat, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        state: 0
+        started: 0
+        guid: 05e11b5f39d3f4f4e9610afb62402cff
+        position: {x: 0, y: 120}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        child:
+          rid: 8280498510841249795
+        restartOnSuccess: 1
+        restartOnFailure: 0
+        maxRepeats: 0
+    - rid: 8280498510841249795
+      type: {class: Selector, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        state: 0
+        started: 0
+        guid: 5c732940b32ea424f919129ffe9ee93b
+        position: {x: 0, y: 240}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        children:
+        - rid: 8280498510841249796
+        - rid: 8280498510841249797
+        - rid: 8280498510841249798
+    - rid: 8280498510841249796
+      type: {class: Sequencer, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        state: 0
+        started: 0
+        guid: bcbd4034e85bf3b44986a538416296a6
+        position: {x: -300, y: 495}
+        blackboard:
+          keys: []
+        description: Chase Seq
+        drawGizmos: 0
+        children:
+        - rid: 8280498518075637763
+        - rid: 8280498518075637762
+    - rid: 8280498510841249797
+      type: {class: Sequencer, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        state: 0
+        started: 0
+        guid: b0cf2f1c564c1834a97454c0789a0c36
+        position: {x: 0, y: 510}
+        blackboard:
+          keys: []
+        description: Attack Seq
+        drawGizmos: 0
+        children:
+        - rid: 8280498518075637760
+        - rid: 8280498518075637761
+    - rid: 8280498510841249798
+      type: {class: Sequencer, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        state: 0
+        started: 0
+        guid: 84ebfe7a9bead4b438bd27c84af704cf
+        position: {x: 360, y: 510}
+        blackboard:
+          keys: []
+        description: Patrol Seq
+        drawGizmos: 0
+        children:
+        - rid: 8280498518075637765
+        - rid: 8280498518075637764
+    - rid: 8280498510841249806
+      type: {class: GameObjectKey, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        name: playerGameObject
+        typeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        value: {fileID: 0}
+    - rid: 8280498510841249807
+      type: {class: IntKey, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        name: range
+        typeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+        value: 5
+    - rid: 8280498510841249808
+      type: {class: FloatKey, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        name: upperrangeChase
+        typeName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+        value: 3
+    - rid: 8280498510841249809
+      type: {class: FloatKey, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        name: lowerrangeChase
+        typeName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+        value: 1
+    - rid: 8280498510841249810
+      type: {class: GameObjectKey, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        name: waypointParent
+        typeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        value: {fileID: 0}
+    - rid: 8280498510841249811
+      type: {class: GameObjectKey, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        name: targetObject
+        typeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        value: {fileID: 0}
+    - rid: 8280498510841249812
+      type: {class: GameObjectKey, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        name: prototypeRunnerGameObject
+        typeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        value: {fileID: 0}
+    - rid: 8280498511813017607
+      type: {class: GameObjectKey, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        name: selfGameObject
+        typeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        value: {fileID: 0}
+    - rid: 8280498518075637760
+      type: {class: EnemyInAttackRange, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: f7abda4adf8ec3c4fb2111103684f006
+        position: {x: -180, y: 660}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 1
+        selfGameObject:
+          reference:
+            rid: 8280498511813017607
+          defaultValue: {fileID: 0}
+        playerGameObject:
+          reference:
+            rid: 8280498510841249806
+          defaultValue: {fileID: 0}
+        upperrange:
+          reference:
+            rid: 8280498510841249808
+          defaultValue: 0
+        attackdis: 3.3
+    - rid: 8280498518075637761
+      type: {class: AttackPlayer, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 5e71783cb141aaa4f97930ef2b60ade7
+        position: {x: 45, y: 660}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 1
+        playerGameObject:
+          reference:
+            rid: 8280498510841249806
+          defaultValue: {fileID: 0}
+        selfGameObject:
+          reference:
+            rid: 8280498511813017607
+          defaultValue: {fileID: 0}
+    - rid: 8280498518075637762
+      type: {class: chasePlayer, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 144a385891088854384e8565a0b096a6
+        position: {x: -330, y: 690}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 1
+        selfGameObject:
+          reference:
+            rid: 8280498511813017607
+          defaultValue: {fileID: 0}
+        playerGameObject:
+          reference:
+            rid: 8280498510841249806
+          defaultValue: {fileID: 0}
+        upperRangeChase:
+          reference:
+            rid: 8280498510841249808
+          defaultValue: 0
+        lowerRangeChase:
+          reference:
+            rid: 8280498510841249809
+          defaultValue: 0
+        chaserange: 4
+    - rid: 8280498518075637763
+      type: {class: EnemyInChaseRange, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: a4bfc4bc8c4c2304f88e38274ea27558
+        position: {x: -525, y: 690}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 1
+        selfGameObject:
+          reference:
+            rid: 8280498511813017607
+          defaultValue: {fileID: 0}
+        playerGameObject:
+          reference:
+            rid: 8280498510841249806
+          defaultValue: {fileID: 0}
+        upperrange:
+          reference:
+            rid: 8280498510841249808
+          defaultValue: 0
+        lowerrange:
+          reference:
+            rid: 8280498510841249809
+          defaultValue: 0
+    - rid: 8280498518075637764
+      type: {class: GoToTarget, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 6e3e1afcf60910b499f21ffdce769f9e
+        position: {x: 450, y: 690}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        selfGameObject:
+          reference:
+            rid: 8280498511813017607
+          defaultValue: {fileID: 0}
+        targetObject:
+          reference:
+            rid: 8280498510841249811
+          defaultValue: {fileID: 0}
+    - rid: 8280498518075637765
+      type: {class: GetNextDestination, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 787cb414fb0d6f640a25fee2b2ae6a17
+        position: {x: 255, y: 690}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        waypointParent:
+          reference:
+            rid: 8280498510841249810
+          defaultValue: {fileID: 0}
+        myTransform:
+          reference:
+            rid: 8280498511813017607
+          defaultValue: {fileID: 0}

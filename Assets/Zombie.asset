@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d285eb63c2cdd74180de7cfceaa96ad, type: 3}
+  m_Name: Zombie
+  m_EditorClassIdentifier: 
+  rootNode:
+    rid: 8280498057400025089
+  nodes:
+  - rid: 8280498057400025089
+  - rid: 8280498060025397250
+  - rid: 8280498060025397251
+  - rid: 8280498060025397253
+  - rid: 8280498064247226368
+  treeState: 0
+  blackboard:
+    keys:
+    - rid: 8280498060025397254
+    - rid: 8280498060025397255
+    - rid: 8280498060025397256
+  viewPosition: {x: 262, y: 150.66667, z: 0}
+  viewScale: {x: 0.7561437, y: 0.7561437, z: 1}
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 8280498057400025089
+      type: {class: RootNode, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        state: 0
+        started: 0
+        guid: 12690339-97f2-4860-853b-f5f2948c7a0b
+        position: {x: -165, y: -180}
+        blackboard:
+          keys: []
+        description: Root Node
+        drawGizmos: 1
+        child:
+          rid: 8280498064247226368
+    - rid: 8280498060025397250
+      type: {class: GoToTarget, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 9f511cffd9280054dad001e7b181bb64
+        position: {x: 30, y: 450}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        selfGameObject:
+          reference:
+            rid: -2
+          defaultValue: {fileID: 0}
+        targetObject:
+          reference:
+            rid: 8280498060025397256
+          defaultValue: {fileID: 0}
+    - rid: 8280498060025397251
+      type: {class: Selector, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        state: 0
+        started: 0
+        guid: 913b3a18df44afa42a840ab1dba246d3
+        position: {x: -165, y: 60}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        children:
+        - rid: 8280498060025397253
+    - rid: 8280498060025397253
+      type: {class: Sequencer, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        state: 0
+        started: 0
+        guid: e32a32969ba78424bbb19be44bfc0015
+        position: {x: -75, y: 240}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 1
+        children:
+        - rid: 8280498060025397250
+    - rid: 8280498060025397254
+      type: {class: GameObjectKey, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        name: PlayerGameObject
+        typeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        value: {fileID: 0}
+    - rid: 8280498060025397255
+      type: {class: GameObjectKey, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        name: SelfGameObject
+        typeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        value: {fileID: 0}
+    - rid: 8280498060025397256
+      type: {class: GameObjectKey, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        name: WaypointParent
+        typeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        value: {fileID: 0}
+    - rid: 8280498064247226368
+      type: {class: Repeat, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        state: 0
+        started: 0
+        guid: 4a0512c7b8dfdcd44b8cab8f0a619791
+        position: {x: -165, y: -60}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 1
+        child:
+          rid: 8280498060025397251
+        restartOnSuccess: 1
+        restartOnFailure: 1
+        maxRepeats: 0
